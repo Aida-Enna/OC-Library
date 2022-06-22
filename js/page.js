@@ -648,7 +648,7 @@ export default class Page {
 
 
 		//Setup Titlebar
-		this.header.innerHTML	= "<div id=titleBar>♥~Poniary~♥</div>";
+		this.header.innerHTML	= "<div id=titleBar>Original Character Library</div>";
 
 		this.menuBar.set( "default", menuBarPresets.default );
 		this.menuBar.set( "locked", menuBarPresets.locked );

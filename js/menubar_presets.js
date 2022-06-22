@@ -22,13 +22,13 @@ const universalHelpMenu = {
 		{
 			name: "BBCode Reference Guide",
 			func: "page.showBBCodeRef()",
-			tooltip: "Show Poniary's BBCode Reference",
+			tooltip: "Show OCLibrary's BBCode Reference",
 			iconURL: "img/icon_bbcode.png"
 		},
 		{
 			name: "Regular Expressions (RegEXP) Guide",
 			func: "page.showRegEXPHelp()",
-			tooltip: "Show Poniary's RegExp Reference",
+			tooltip: "Show OCLibrary's RegExp Reference",
 			iconURL: "img/icon_regexp.png"
 		},
 		{
@@ -89,13 +89,13 @@ const universalViewMenu = {
 				{
 					name: "Classic",
 					func: "page.style = 'classic'",
-					tooltip: "Poniary's Classic Look",
+					tooltip: "OCLibrary's Classic Look",
 					iconURL: "img/icon_theme_classic.png"
 				},
 				{
 					name: "Classic (Dark)",
 					func: "page.style = 'dark'",
-					tooltip: "A dark version of Poniary's Classic Theme",
+					tooltip: "A dark version of OCLibrary's Classic Theme",
 					iconURL: "img/icon_theme_classic_dark.png"
 				},
 				{
@@ -137,7 +137,7 @@ const menuBarPresets = {
 				{
 					name: "New Tab",
 					func: "window.open(window.location.href, '_blank')",
-					tooltip: "Open Poniary in another tab.\nGood for multitasking"
+					tooltip: "Open OCLibrary in another tab.\nGood for multitasking"
 				},
 				{
 					name: "Import",
@@ -275,13 +275,13 @@ const menuBarPresets = {
 						{
 							name: "Classic",
 							func: "page.style = 'classic'",
-							tooltip: "Poniary's Classic Look",
+							tooltip: "OCLibrary's Classic Look",
 							iconURL: "img/icon_theme_classic.png"
 						},
 						{
 							name: "Classic (Dark)",
 							func: "page.style = 'dark'",
-							tooltip: "A dark version of Poniary's Classic Theme",
+							tooltip: "A dark version of OCLibrary's Classic Theme",
 							iconURL: "img/icon_theme_classic_dark.png"
 						},
 						{

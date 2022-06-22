@@ -2,16 +2,22 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="description" content="Tool for creation and documentation of Original Characters, primarily made with the Brony Fandom in mind.">
-	<meta name="author" content='Christian "Krissy" Silvermoon'>
-	<meta name="application-name" content="Poniary OC Manager">
-	<meta name="keywords" content="javascript, editor, mlp, brony, brony-fandom, origianl characters, oc">
-	<title id="pageTitle">Poniary</title>
+	<meta name="description" content="Tool for creation and documentation of Original Characters.">
+	<meta name="author" content='Aida Enna'>
+	<meta name="application-name" content="OC Library">
+	<meta name="keywords" content="javascript, editor, origianl characters, oc">
+	<title id="pageTitle">OC Library</title>
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<link rel="stylesheet" id="stylesheet" name="Decorative">
 	<link rel="icon" id="favicon" href="img/favicon.png" name="favicon">
 	<script type=module src="js/main.js"></script>
 </head>
+<script>
+window.onload = function(){
+    document.getElementById('universe').innerHTML = 'Universe Name';
+	document.getElementById('author').innerHTML = 'Author';
+};
+</script>
 <body>
 	Loading, please wait...<br/><br/>
 	If the page does not continue to load, please ensure that the following conditions are <b><u>true</u></b>:
@@ -26,22 +32,14 @@
 	<div id="refElements">
 		<div id="welcomeRef">
 			<center>
-				Welcome To The Poniary OC Manager<br/>
+				Welcome to the <span id="universe">Universe</span> OC Library!<br/>
 				<div id=MainLogo></div>
-				<span class="appVer">Unknwon Version</span><br/>
-				<font size=1>by <span class="appAuthor">Christian \"Krissy\" Silvermoon</span></font><br/>
-				<br/>So... what is <i>Poniary?</i><br/>
-				Poniary is an interactive tool to store details about characters you and maybe friends create.
-				It was primarily created for storing MLP OCs, but can be used for others too.
-				If you're like me an have like 50 characters, you probably like to document them to keep
-				everything you do with them consistant!<br/>
-				<br/>
-				Be careful not to refresh without saving!<br/>
-				<br/>
-				Hopefully this Interactive OC Manager will help you keep track of your OCs as well as it
-				does for me!<br/>
-				<br/>
-				Happy Ponying!<br/>
+				Version <span class="appVer">Unknown Version</span><br/>
+				<font size=1>by <span id="author">Author</span><br>(Original concept/code by: <span class="appAuthor">Christian \"Krissy\" Silvermoon</span>)</font><br/>
+				<br/>So... what is an <i>OC Library?</i><br/>
+				An OC Library is an interactive tool to store details about characters you/friends create.<br>
+				It was originally created by Krissy Silvermoon for storing MLP OCs, but has been modified by Aida Enna to be more of a general library for many different topics.<br/>
+				Be careful not to refresh without saving, and have fun!<br/>
 				<br/>
 				<a href="javascript:void(0)" onclick="page.showCharList()">Continue To Character List</a>
 			</center>
@@ -57,14 +55,14 @@
 			are used in many computer programs and programing languages to determine if a string (aka a snippet of text), matches what you might want it to.<br/>
 			<br/>
 			This page's puprose is <u><b>NOT</b></u> to teach you all the details of RegEXP, nor is it a complete tutorial... however, it will teach you how
-			some of RegEXP's basic features work, and how it applies to Poniary and it's Search Feature.<br/>
+			some of RegEXP's basic features work, and how it applies to the OC Library and it's Search Feature.<br/>
 			<br/>
 			To test out and practice Regular Expressions, a good place to check out is: <a href="https://www.debuggex.com/" target="_blank">Debuggex</a><br/>
 			<br/>
 			The first thing to note is that certain characters are <i>special</i> and are not just what they appear to be. If you actually intend THAT character
 			and it's a special one, you'll need to use a backslash (\) to <i>escape</i> the character from it's special function.<br/>
 			<br/>
-			When searching in Poniary, things are case-insensitve and BBCode is removed, for simplicity</br>
+			When searching in the OC Library, things are case-insensitve and BBCode is removed, for simplicity</br>
 			This means that "[b]Pineapples[/b][sup]are YUMMY[/sup]" is treated as "pineapplesare yummy" when searching.<br/>
 			<br/>
 			Here are some examples of RegEXP in action:<br/>

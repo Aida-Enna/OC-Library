@@ -1,6 +1,6 @@
 import Page from './page.js';
 import getURLParameter from './geturlparameter.js';
-import PoniarySave from './poniary_save.js';
+import OCLibrarySave from './oclibrary_save.js';
 import './console_override.js'; //Override Console
 
 /*
@@ -11,7 +11,7 @@ import './console_override.js'; //Override Console
 const refElements	= document.getElementById("refElements");
 refElements.remove();
 const page			= new Page(refElements);
-const saveData		= new PoniarySave();
+const saveData		= new OCLibrarySave();
 
 window.saveData		= saveData; //expose saveData globally
 window.page			= page; //expose page globally

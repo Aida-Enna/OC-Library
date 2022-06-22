@@ -2,7 +2,7 @@ import {AppData} from "./app.js";
 import BBCode from './bbcode.js';
 
 /*
-	Class handles manipulation, storage, loading, etc. of pony data
+	Class handles manipulation, storage, loading, etc. of original character data
 */
 
 class Pony {
@@ -29,7 +29,7 @@ class Pony {
 	}
 }
 
-export default class PoniarySave {
+export default class OCLibrarySave {
 	constructor() {
 		this.Characters		= [];
 		this.MetaInf		= {
@@ -183,8 +183,8 @@ export default class PoniarySave {
 	}
 
 	exportChar(id) {
-		//Create new PoniarySave containing requested character and return it;
-		const exportSave			= new PoniarySave(); //Create new save object
+		//Create new OCLibrarySave containing requested character and return it;
+		const exportSave			= new OCLibrarySave(); //Create new save object
 		exportSave.MetaInf			= this.MetaInf;
 		exportSave.Characters[0]	= this.Characters[id];
 		return exportSave;
@@ -204,7 +204,7 @@ export default class PoniarySave {
 			element.href = this.toDataURI();
 		}
 
-		element.download = "PoniarySave.json";
+		element.download = "OCLibrarySave.json";
 		document.body.appendChild(element);
 		element.click();
 		document.body.removeChild(element);
@@ -217,7 +217,7 @@ function saveUpdater(save, callback) {
 
 	if ( save.MetaInf.app != AppData.name ) {
 		error			= true;
-		errorDetails	= "Not a valid Poniary Save";
+		errorDetails	= "Not a valid OCLibrary Save";
 	} else {
 		switch( save.MetaInf.version ) {
 			case "18.2.2":
@@ -265,7 +265,7 @@ function saveUpdater(save, callback) {
 			default:
 				console.error("UNKNOWN SAVE VERSION!");
 				error = true;
-				errorDetails = "Unknown Save Version: " + save.MetaInf.version + "\n\nPlease ensure that:\n - Poniary is NOT out of date\n - That your save is not damaged or corrupted\n - That your JSON file is definately a Poniary Save\n\nIf you're CERTAIN this message is in error, please use:\nHelp → Report a Bug"
+				errorDetails = "Unknown Save Version: " + save.MetaInf.version + "\n\nPlease ensure that:\n - OCLibrary is NOT out of date\n - That your save is not damaged or corrupted\n - That your JSON file is definately a OCLibrary Save\n\nIf you're CERTAIN this message is in error, please use:\nHelp → Report a Bug"
 				break;
 		}
 	}

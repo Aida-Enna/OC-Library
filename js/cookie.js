@@ -7,7 +7,7 @@ import {AppData} from './app.js';
 export default class Cookie {
 	constructor(name, value, prependNameWithVersion = true) {
 		if ( prependNameWithVersion ) {
-			this.name	= `Poniary_${AppData.version}_${name}`;
+			this.name	= `OCLibrary_${AppData.version}_${name}`;
 		} else {
 			this.name	= name;
 		}
@@ -34,7 +34,7 @@ export default class Cookie {
 		var returnValue = null;
 
 		if ( prependNameWithVersion ) {
-			name = `Poniary_${AppData.version}_${nameInput}`;
+			name = `OCLibrary_${AppData.version}_${nameInput}`;
 		} else {
 			name = nameInput;
 		}
