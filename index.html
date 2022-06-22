@@ -11,11 +11,12 @@
 	<link rel="stylesheet" id="stylesheet" name="Decorative">
 	<link rel="icon" id="favicon" href="img/favicon.png" name="favicon">
 	<script type=module src="js/main.js"></script>
+	<script type='text/javascript' src='./config.js'></script>
 </head>
 <script>
 window.onload = function(){
-    document.getElementById('universe').innerHTML = 'Universe Name';
-	document.getElementById('author').innerHTML = 'Author';
+    document.getElementById('universe').innerHTML = Config().universe;
+	document.getElementById('author').innerHTML = Config().author;
 };
 </script>
 <body>
