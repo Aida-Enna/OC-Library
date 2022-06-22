@@ -3,5 +3,6 @@
 *.json
 .ftpconfig
 *.sh
+config.js
 
 #Pay Attention to Important Things
