@@ -1,5 +1,6 @@
 #Ignore useless things
 *.swp
 *.json
+.ftpconfig
 
 #Pay Attention to Important Things
