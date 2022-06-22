@@ -5,7 +5,7 @@
 
 export const AppData = {
 	name: "OC Library",
-	author: "Aida Enna",
+	author: "Aida sEnna",
 	version: "1.0.0.0",
 	saveVersion: "18.6.2",
 	hyperlinks: {
